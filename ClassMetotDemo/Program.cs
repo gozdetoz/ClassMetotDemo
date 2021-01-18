@@ -19,7 +19,7 @@ namespace ClassMetotDemo
             CustomerManeger customerManager = new CustomerManeger();
 
             customerManager.Add(customer1);
-            customerManager.Get(customer2);
+            customerManager.Get(customer1,customer2, customer3);
             customerManager.Delete(customer3);
             
         }

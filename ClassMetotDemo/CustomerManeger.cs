@@ -11,10 +11,13 @@ namespace ClassMetotDemo
             Console.WriteLine("Customer Added " + customer.Name+" " +customer.Surname );
         }
 
-        public void Get(Customer customer)
+        public void Get(params Customer[] customer)
         {
-           
-            Console.WriteLine("List :" + customer.Name + " " + customer.Surname);
+            foreach (var item in customer)
+            {
+                Console.WriteLine(item.Name + " " + item.Surname);
+            }
+            
         }
 
         public void Delete(Customer customer)
